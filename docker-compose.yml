@@ -3,14 +3,14 @@ version: '3'
 services:
   app:
     image: svelte_dev:17-alpine
-    build: .
+    build: ./docker/app/
     user: "node:node"
-    container_name: svelte_dev
+    container_name: svelte_app
     environment:
       NODE_ENV: "development"
     volumes:
-      - ./:/usr/src/app
-    working_dir: "/usr/src/app/svelte-app/"
+      - ./workspace:/usr/src/app/workspace
+    working_dir: "/usr/src/app/workspace/"
     ports:
       - "4200:4200"
     tty: true
