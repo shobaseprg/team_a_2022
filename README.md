@@ -1,16 +1,18 @@
 # team_a_2022
 
 ```
-プロジェクトルートに移動
+vscodeの拡張機能Remote Developmentをインストール
 ```
 
 ```
-# コンテナ立ち上げ コンテナ内に入る
-docker-compose up -d && docker-compose exec app bash
+# リモートvscodeにアクセス
+vscode左下の「><」マークをクリック
+reopen in containerをクリック
 ```
 
 ```
-# サーバー立ち上げ
+# サーバーを立ち上げる
+ターミナルで cd svelte-app
 npm run dev
 ```
 
