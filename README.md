@@ -13,6 +13,7 @@ reopen in containerをクリック
 ```
 # サーバーを立ち上げる
 ターミナルで cd svelte-app
+npm install
 npm run dev
 ```
 
